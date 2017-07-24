@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   namespace :admin do
     resources :users
+    resources :contacts
+    resources :contact_accesses
 
     root to: "users#index"
   end
